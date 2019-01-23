@@ -2,13 +2,13 @@
 
 namespace Signifly\Addresses\Test\Models;
 
-use Signifly\Addresses\Addressable;
 use Illuminate\Database\Eloquent\Model;
+use Signifly\Addresses\Traits\HasAddresses;
 use Illuminate\Contracts\Auth\Authenticatable;
 
 class User extends Model implements Authenticatable
 {
-    use Addressable;
+    use HasAddresses;
 
     protected $fillable = [
         'name',

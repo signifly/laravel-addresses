@@ -5,7 +5,7 @@ namespace Signifly\Addresses\Test;
 use Signifly\Addresses\Test\Models\User;
 use Illuminate\Foundation\Testing\WithFaker;
 
-class AddressableTest extends TestCase
+class HasAddressesTest extends TestCase
 {
     use WithFaker;
 
