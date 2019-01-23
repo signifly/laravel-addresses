@@ -33,6 +33,18 @@ class Address extends Model
     }
 
     /**
+     * Scope a query to include the billing address(es).
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder $query
+     * @param  bool $value
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeBilling(Builder $query, bool $value = true): Builder
+    {
+        return $query->where('is_billing', $value);
+    }
+
+    /**
      * Scope a query to include the primary address(es).
      *
      * @param  \Illuminate\Database\Eloquent\Builder $query
@@ -42,5 +54,17 @@ class Address extends Model
     public function scopePrimary(Builder $query, bool $value = true): Builder
     {
         return $query->where('is_primary', $value);
+    }
+
+    /**
+     * Scope a query to include the shipping address(es).
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder $query
+     * @param  bool $value
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeShipping(Builder $query, bool $value = true): Builder
+    {
+        return $query->where('is_shipping', $value);
     }
 }
