@@ -4,6 +4,7 @@ namespace Signifly\Addresses\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Address extends Model
 {
@@ -30,6 +31,16 @@ class Address extends Model
         }
 
         parent::__construct($attributes);
+    }
+
+    /**
+     * The associated addressable relation.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+     */
+    public function addressable(): MorphTo
+    {
+        return $this->morphTo();
     }
 
     /**
