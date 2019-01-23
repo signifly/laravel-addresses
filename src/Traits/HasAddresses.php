@@ -1,19 +1,19 @@
 <?php
 
-namespace Signifly\Addresses;
+namespace Signifly\Addresses\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
-trait Addressable
+trait HasAddresses
 {
     /**
      * Boot the addressable trait for the model.
      *
      * @return void
      */
-    public static function bootAddressable()
+    public static function bootHasAddresses()
     {
         static::deleting(function ($model) {
             $model->addresses()->delete();
