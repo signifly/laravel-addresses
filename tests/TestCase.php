@@ -46,7 +46,7 @@ abstract class TestCase extends Orchestra
 
     protected function createAddressesTable()
     {
-        include_once __DIR__ . '/../migrations/create_addresses_table.php.stub';
+        include_once __DIR__.'/../migrations/create_addresses_table.php.stub';
 
         (new CreateAddressesTable())->up();
     }

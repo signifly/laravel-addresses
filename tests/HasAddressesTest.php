@@ -10,7 +10,7 @@ class HasAddressesTest extends TestCase
     use WithFaker;
 
     /** @test */
-    function it_creates_an_address()
+    public function it_creates_an_address()
     {
         // Given a random user
         $user = User::inRandomOrder()->first();
@@ -30,7 +30,7 @@ class HasAddressesTest extends TestCase
     }
 
     /** @test */
-    function it_deletes_associated_addresses()
+    public function it_deletes_associated_addresses()
     {
         // Given a user with an address
         $user = User::inRandomOrder()->first();
@@ -54,7 +54,7 @@ class HasAddressesTest extends TestCase
     }
 
     /** @test */
-    function it_can_include_the_primary_address()
+    public function it_can_include_the_primary_address()
     {
         // Given a user with a primary address
         $user = User::inRandomOrder()->first();

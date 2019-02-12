@@ -32,6 +32,7 @@ class User extends Model implements Authenticatable
     public function getAuthIdentifier()
     {
         $name = $this->getAuthIdentifierName();
+
         return $this->attributes[$name];
     }
 
