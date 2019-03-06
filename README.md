@@ -1,5 +1,11 @@
 # Easily manage addresses in your Laravel app
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/signifly/laravel-addresses.svg?style=flat-square)](https://packagist.org/packages/signifly/laravel-addresses)
+[![Build Status](https://img.shields.io/travis/signifly/laravel-addresses/master.svg?style=flat-square)](https://travis-ci.org/signifly/laravel-addresses)
+[![StyleCI](https://styleci.io/repos/166245153/shield?branch=master)](https://styleci.io/repos/166245153)
+[![Quality Score](https://img.shields.io/scrutinizer/g/signifly/laravel-addresses.svg?style=flat-square)](https://scrutinizer-ci.com/g/signifly/laravel-addresses)
+[![Total Downloads](https://img.shields.io/packagist/dt/signifly/laravel-addresses.svg?style=flat-square)](https://packagist.org/packages/signifly/laravel-addresses)
+
 The `signifly/laravel-addresses` package allows you to easily mange addresses in your Laravel app.
 
 ## Documentation
