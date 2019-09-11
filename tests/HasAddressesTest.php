@@ -9,6 +9,15 @@ class HasAddressesTest extends TestCase
 {
     use WithFaker;
 
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        if (!$this->faker) {
+            $this->setUpFaker();
+        }
+    }
+
     /** @test */
     public function it_creates_an_address()
     {
