@@ -13,7 +13,7 @@ class HasAddressesTest extends TestCase
     {
         parent::setUp();
 
-        if (!$this->faker) {
+        if (! $this->faker) {
             $this->setUpFaker();
         }
     }
