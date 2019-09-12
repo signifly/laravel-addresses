@@ -33,7 +33,6 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            BuilderMacroServiceProvider::class,
             AddressesServiceProvider::class,
         ];
     }
