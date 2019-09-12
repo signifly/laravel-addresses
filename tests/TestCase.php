@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Signifly\Addresses\AddressesServiceProvider;
-use Signifly\BuilderMacros\BuilderMacroServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

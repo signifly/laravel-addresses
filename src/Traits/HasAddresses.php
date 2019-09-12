@@ -62,12 +62,11 @@ trait HasAddresses
         $tableName = $this->getTable();
         $primaryKey = $this->getKeyName();
 
-        return $query->addSelect(['primary_address_id' =>
-            $addressModel::select('id')
-                ->whereRaw("addressable_id = {$tableName}.{$primaryKey}")
-                ->where('addressable_type', get_class())
-                ->primary()
-                ->limit(1),
+        return $query->addSelect(['primary_address_id' => $addressModel::select('id')
+            ->whereRaw("addressable_id = {$tableName}.{$primaryKey}")
+            ->where('addressable_type', get_class())
+            ->primary()
+            ->limit(1),
         ])->with('primaryAddress');
     }
 }
