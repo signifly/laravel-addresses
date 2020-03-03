@@ -3,9 +3,9 @@
 namespace Signifly\Addresses\Test;
 
 use CreateAddressesTable;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Signifly\Addresses\AddressesServiceProvider;
 

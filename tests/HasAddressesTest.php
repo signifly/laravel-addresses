@@ -2,8 +2,8 @@
 
 namespace Signifly\Addresses\Test;
 
-use Signifly\Addresses\Test\Models\User;
 use Illuminate\Foundation\Testing\WithFaker;
+use Signifly\Addresses\Test\Models\User;
 
 class HasAddressesTest extends TestCase
 {

@@ -2,9 +2,9 @@
 
 namespace Signifly\Addresses\Test\Models;
 
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Signifly\Addresses\Traits\HasAddresses;
-use Illuminate\Contracts\Auth\Authenticatable;
 
 class User extends Model implements Authenticatable
 {
