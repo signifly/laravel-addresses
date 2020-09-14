@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-addresses` will be documented in this file
 
+## 0.4.1 - 2020-09-14
+
+- Add support for Laravel 8
+
 ## 0.4.0 - 2020-03-03
 
 - Add support for Laravel 7
